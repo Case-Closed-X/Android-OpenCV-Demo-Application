@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity5Draw"
+
+    android:fitsSystemWindows="true"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView05"
+
+                android:layout_width="0dp"
+
+                android:layout_height="70dp"
+                android:background="@android:color/holo_purple"
+
+                android:fitsSystemWindows="true"
+
+                android:gravity="center"
+                android:text="@string/title_05"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageDraw"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="@+id/draw"
+                app:layout_constraintStart_toStartOf="@+id/draw"
+                app:layout_constraintTop_toBottomOf="@+id/draw" />
+
+            <Button
+                android:id="@+id/draw"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+
+                android:layout_marginTop="50dp"
+                android:text="@string/Activity5Draw"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:backgroundTint="@android:color/holo_purple"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView05"
+                app:layout_constraintStart_toStartOf="@+id/textView05"
+                app:layout_constraintTop_toBottomOf="@+id/textView05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

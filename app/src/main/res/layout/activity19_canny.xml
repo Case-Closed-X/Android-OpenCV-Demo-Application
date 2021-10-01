@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity19Canny">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView19Canny"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+
+                android:layout_marginTop="30dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                app:layout_constraintStart_toStartOf="@+id/cardView19"
+                app:layout_constraintTop_toBottomOf="@+id/button19Canny">
+                <!--点击水波涟漪效果：android:foreground="?android:attr/selectableItemBackground"-->
+
+                <ImageView
+                    android:id="@+id/CardImage19Canny"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Activity19Canny"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button19Canny"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/Activity19Canny"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView19"
+                app:layout_constraintStart_toStartOf="@+id/cardView19"
+                app:layout_constraintTop_toBottomOf="@+id/cardView19" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView19"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+
+                android:layout_marginTop="30dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <!--点击水波涟漪效果：android:foreground="?android:attr/selectableItemBackground"-->
+
+                <ImageView
+                    android:id="@+id/CardImage19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Activity19Canny"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/microsoft" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+
+        android:layout_height="70dp"
+
+        android:layout_marginTop="35dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/title_19"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

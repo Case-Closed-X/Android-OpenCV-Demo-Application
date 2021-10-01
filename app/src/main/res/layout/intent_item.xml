@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/imageViewIntent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/app_name"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textViewIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewIntent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIntent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewIntent" />
+
+    <ImageView
+        android:id="@+id/imageViewArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="180dp"
+
+        android:layout_marginEnd="15dp"
+
+        android:contentDescription="@string/app_name"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIntent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewIntent"
+        app:srcCompat="@drawable/right" />
+</androidx.constraintlayout.widget.ConstraintLayout>

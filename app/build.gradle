@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.x.edu.opencv"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    /*
+    开启视图绑定，适用于Android Studio4.0以上版本，
+    英文官方文档：https://developer.android.google.cn/topic/libraries/view-binding?hl=en
+    tools:viewBindingIgnore="true"放置布局中则忽略该布局的绑定
+    */
+
+    /*viewBinding {
+        enabled = true
+    }*/
+    /*
+    开启视图绑定的第二种写法，适用于Android Studio3.6以上版本，
+    中文官方文档（可能更新没有英文官方文档积极）：https://developer.android.google.cn/topic/libraries/view-binding
+    */
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.defaultConfig.vectorDrawables.useSupportLibrary = true
+    /*externalNativeBuild {
+        cmake {
+            version '3.18.1'
+        }
+    }*/
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    ndkVersion '23.0.7123448 rc1'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation project(path: ':sdk')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

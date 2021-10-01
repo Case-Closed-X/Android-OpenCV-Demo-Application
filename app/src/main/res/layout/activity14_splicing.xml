@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity14Splicing"
+
+    android:fitsSystemWindows="true"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView14"
+
+                android:layout_width="0dp"
+
+                android:layout_height="70dp"
+                android:background="@color/yellow"
+
+                android:fitsSystemWindows="true"
+
+                android:gravity="center"
+                android:text="@string/title_14"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image14_1"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:srcCompat="@drawable/x" />
+
+            <ImageView
+                android:id="@+id/image14_2"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="30dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/image14_1"
+                app:layout_constraintStart_toEndOf="@+id/image14_1"
+                app:layout_constraintTop_toTopOf="@+id/image14_1"
+                app:srcCompat="@drawable/s" />
+
+            <Button
+                android:id="@+id/splicing"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+
+                android:layout_marginTop="20dp"
+                android:text="@string/Activity14Splicing"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:backgroundTint="@color/yellow"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/image14_2"
+                app:layout_constraintStart_toStartOf="@+id/image14_1"
+                app:layout_constraintTop_toBottomOf="@+id/image14_1" />
+            <!--使用系统样式style="?attr/borderlessButtonStyle"，要删除app:backgroundTint="@color/orange"-->
+
+            <ImageView
+                android:id="@+id/imageSplicing"
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="@+id/splicing"
+                app:layout_constraintStart_toStartOf="@+id/splicing"
+                app:layout_constraintTop_toBottomOf="@+id/splicing" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

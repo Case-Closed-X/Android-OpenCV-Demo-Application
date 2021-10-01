@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:minHeight="70dp"
+    tools:ignore="UseCompoundDrawables"
+
+    android:background="?android:attr/selectableItemBackground"
+
+
+    >
+    <!--可以使用系统效果android:background="?android:attr/selectableItemBackground"
+    或者也可以使用
+    android:background="@drawable/linerlayout_water_selector"
+    android:clickable="true"
+    android:focusable="true"
+    自定义点击效果
+    -->
+
+    <TextView
+        android:id="@+id/textViewIntentRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="180dp"
+
+        android:layout_marginEnd="15dp"
+
+        android:contentDescription="@string/app_name"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIntentRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewIntentRecycler"
+        app:srcCompat="@drawable/right" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ListViewActivity">
+    <!--如果使用android:fitsSystemWindows="true"则小白条背景透明失效-->
+
+    <TextView
+        android:id="@+id/textViewOpenCV"
+        android:layout_width="wrap_content"
+
+        android:layout_height="70dp"
+
+        android:layout_marginTop="35dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="5dp"
+
+        android:divider="@android:color/transparent"
+        android:overScrollMode="always"
+
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOpenCV" />
+    <!--约束布局向下要安排上，然后android:layout_height="0dp"才能正常滑动ListView-->
+</androidx.constraintlayout.widget.ConstraintLayout>

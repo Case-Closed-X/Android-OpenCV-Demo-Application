@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    app:layout_dodgeInsetEdges="top"
+    tools:context=".Activity30FaceTracking">
+
+    <org.opencv.android.JavaCamera2View
+        android:id="@+id/javaCamera2View30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button30Camera"
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/Button30Camera"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:backgroundTint="@color/background_gray"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button30Photograph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/button30Photograph"
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:insetLeft="0dp"
+
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/Button30Photograph"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:backgroundTint="@color/background_gray"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button30Camera"
+        app:layout_constraintStart_toStartOf="@+id/button30Camera"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imagePhotograph"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:foreground="?android:attr/selectableItemBackground"
+
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/javaCamera2View30"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photograph2" />
+
+    <ImageView
+        android:id="@+id/imageCameraChange"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:foreground="?android:attr/selectableItemBackground"
+
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/imagePhotograph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/javaCamera2View30"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera_change5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

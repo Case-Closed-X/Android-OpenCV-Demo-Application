@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamActivity1Show">
+
+    <TextView
+        android:id="@+id/textViewExam1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="70dp"
+
+        android:layout_marginTop="35dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/exam_01"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="5dp"
+
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExam1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewDescribe1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:scrollbars="horizontal|vertical"
+                android:text="@string/describe1"
+
+                android:textColor="@color/black"
+
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/code1"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1Show"
+                app:layout_constraintStart_toStartOf="@+id/imageView1Show"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1Show" />
+
+            <Button
+                android:id="@+id/code1"
+
+                android:stateListAnimator="@null"
+
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="470dp"
+                android:text="@string/ExamCode"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="@color/purple_500"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textViewDescribe1"
+                app:layout_constraintStart_toStartOf="@+id/textViewDescribe1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/cancel"
+
+                android:stateListAnimator="@null"
+
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="@string/ExamCancel"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:backgroundTint="@color/text_Grey"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/code1"
+                app:layout_constraintStart_toStartOf="@+id/code1"
+                app:layout_constraintTop_toBottomOf="@+id/code1"
+                app:rippleColor="?attr/colorButtonNormal" />
+
+            <ImageView
+                android:id="@+id/imageView1Show"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView1Show"
+
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:scrollbars="horizontal|vertical"
+                android:textColor="@color/black"
+
+                android:textIsSelectable="true"
+
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/code1"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1Show"
+                app:layout_constraintStart_toStartOf="@+id/imageView1Show"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

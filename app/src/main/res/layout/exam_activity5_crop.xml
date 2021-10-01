@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamActivity5Crop">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExam5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewExam5"
+
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="60dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <!--点击水波涟漪效果：android:foreground="?android:attr/selectableItemBackground"-->
+
+                    <ImageView
+                        android:id="@+id/imageViewExam5Crop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/exam_05"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/exam5crop" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/code5"
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="70dp"
+                    android:layout_marginTop="60dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/ExamCode"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/purple_500"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardViewExam5"
+                    app:layout_constraintStart_toStartOf="@+id/cardViewExam5"
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewExam5" />
+
+                <Button
+                    android:id="@+id/cancel"
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="70dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/ExamCancel"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/text_Grey"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/code5"
+                    app:layout_constraintStart_toStartOf="@+id/code5"
+                    app:layout_constraintTop_toBottomOf="@+id/code5"
+                    app:rippleColor="?attr/colorButtonNormal" />
+
+                <TextView
+                    android:id="@+id/textViewExam5Crop"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:scrollbars="horizontal|vertical"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/code5"
+                    app:layout_constraintEnd_toEndOf="@+id/code5"
+                    app:layout_constraintStart_toStartOf="@+id/code5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="gone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewExam5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="80dp"
+
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/describe5"
+        android:textColor="@color/orange"
+
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

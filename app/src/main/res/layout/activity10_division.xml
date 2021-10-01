@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity10Division"
+
+    android:fitsSystemWindows="true"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView10"
+
+                android:layout_width="0dp"
+
+                android:layout_height="70dp"
+                android:background="@color/purple_500"
+
+                android:fitsSystemWindows="true"
+
+                android:gravity="center"
+                android:text="@string/title_10"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image10"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:srcCompat="@drawable/bg1" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+
+                android:layout_marginTop="20dp"
+                android:text="@string/Activity10DivisionButton"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:backgroundTint="@color/purple_500"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/image10"
+                app:layout_constraintStart_toStartOf="@+id/image10"
+                app:layout_constraintTop_toBottomOf="@+id/image10" />
+
+            <ImageView
+                android:id="@+id/imageDivision"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@+id/division"
+                app:layout_constraintStart_toStartOf="@+id/division"
+                app:layout_constraintTop_toBottomOf="@+id/division" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.x.edu.opencv">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OpenCV">
+        <activity android:name="com.x.edu.opencv.AboutActivity" />
+        <activity
+            android:name="com.x.edu.opencv.Activity30FaceTracking"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.x.edu.opencv.Activity29Camera" />
+        <activity android:name="com.x.edu.opencv.ExamActivity5Crop" />
+        <activity android:name="com.x.edu.opencv.Activity28FaceRecognition" />
+        <activity android:name="com.x.edu.opencv.Activity27SIFI" />
+        <activity android:name="com.x.edu.opencv.Activity26Tomasi" />
+        <activity android:name="com.x.edu.opencv.Activity25Harris" />
+        <activity android:name="com.x.edu.opencv.Activity24Matching" />
+        <activity android:name="com.x.edu.opencv.Activity23Histogram" />
+        <activity android:name="com.x.edu.opencv.Activity22HoughCircle" />
+        <activity android:name="com.x.edu.opencv.Activity21HoughLine" />
+        <activity android:name="com.x.edu.opencv.Activity20Thresholding" />
+        <activity android:name="com.x.edu.opencv.Activity19Canny" />
+        <activity android:name="com.x.edu.opencv.Activity18MorphologyRecyclerView" />
+        <activity android:name="com.x.edu.opencv.Activity18Morphology" />
+        <activity android:name="com.x.edu.opencv.ExamActivity4Division" />
+        <activity android:name="com.x.edu.opencv.MainRecyclerViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.x.edu.opencv.Activity17Median" />
+        <activity android:name="com.x.edu.opencv.Activity16Blur" />
+        <activity android:name="com.x.edu.opencv.Activity15Normalization" />
+        <activity android:name="com.x.edu.opencv.Activity14Splicing" />
+        <activity android:name="com.x.edu.opencv.Activity13Logic" />
+        <activity android:name="com.x.edu.opencv.Activity12Add" />
+        <activity android:name="com.x.edu.opencv.ExamActivity3Montage" />
+        <activity android:name="com.x.edu.opencv.ExamActivity2Draw" />
+        <activity android:name="com.x.edu.opencv.ExamActivity1Show" />
+        <activity android:name="com.x.edu.opencv.RecyclerViewActivity" /> <!-- Exam主界面 -->
+        <activity android:name="com.x.edu.opencv.ListViewActivity" /> <!-- ListView版主界面，暂时弃用 -->
+        <activity
+            android:name="com.x.edu.opencv.Activity9Channel"
+            android:label="@string/title_09"
+            android:parentActivityName="com.x.edu.opencv.MainActivity">
+
+            <!-- 如果有toolbar或actionbar的话，添加显示文本，并且可以返回主界面 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.x.edu.opencv.MainActivity" />
+        </activity>
+        <activity android:name="com.x.edu.opencv.Activity11Compose" />
+        <activity android:name="com.x.edu.opencv.Activity10Division" />
+        <activity android:name="com.x.edu.opencv.Activity8Read3" />
+        <activity android:name="com.x.edu.opencv.Activity7Read2" />
+        <activity android:name="com.x.edu.opencv.Activity6Read1" />
+        <activity android:name="com.x.edu.opencv.Activity5Draw" />
+        <activity android:name="com.x.edu.opencv.Activity4Cut" />
+        <activity android:name="com.x.edu.opencv.Activity3Save" />
+        <activity android:name="com.x.edu.opencv.Activity2Choose" />
+        <activity android:name="com.x.edu.opencv.Activity1Gray" />
+        <activity android:name="com.x.edu.opencv.MainActivity" />
+    </application>
+
+</manifest>
